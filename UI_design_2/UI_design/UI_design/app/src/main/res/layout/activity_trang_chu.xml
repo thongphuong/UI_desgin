@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/master_color"
+    android:orientation="vertical"
+    android:weightSum="200"
+    tools:context="com.example.trnquanglc.ui_design.TrangChu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorLine">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="FIFA4"
+                android:textAlignment="center"
+                android:textColor="@color/colorDarkBlue"
+                android:textSize="50dp" />
+
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="80"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Level"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_hlv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="HLV"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_clb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="CLB"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_giatri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Giá trị đội"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_ep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="EP"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_cash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Cash"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_levelt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="10"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_hlvt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Luckyward"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_clbt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Manchester United"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_giatrit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="20.000.000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_ept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="3.000.000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_casht"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="0"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linDauTruong"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="118"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/champion2">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dautruong" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:weightSum="100"
+        android:layout_margin="6dp"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imgShop"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:padding="1dp"
+            app:srcCompat="@drawable/store" />
+
+        <ImageView
+            android:id="@+id/imgThiTruong"
+            android:padding="3dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/thitruong" />
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:padding="2dp"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/home" />
+        <ImageView
+            android:id="@+id/imgQuanLyDoi"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:layout_marginLeft="15dp"
+            android:padding="1dp"
+            app:srcCompat="@drawable/quanlydoi" />
+
+        <ImageView
+            android:id="@+id/imgKho"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="20"
+            android:padding="1dp"
+            app:srcCompat="@drawable/kho" />
+    </LinearLayout>
+</LinearLayout>
